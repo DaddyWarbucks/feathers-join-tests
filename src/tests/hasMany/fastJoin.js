@@ -1,5 +1,3 @@
-// Use this hook to manipulate incoming or outgoing data.
-// For more information on hooks see: http://docs.feathersjs.com/api/hooks.html
 const { fastJoin } = require("feathers-hooks-common");
 
 const bazResolvers = {
@@ -19,7 +17,6 @@ const bazResolvers = {
   },
 };
 
-
 const barResolvers = {
   joins: {
     foos: {
@@ -30,9 +27,6 @@ const barResolvers = {
     },
   },
 };
-
-
-// eslint-disable-next-line no-unused-vars
 
 module.exports = async app => {
   app.service("bazzes").hooks({
